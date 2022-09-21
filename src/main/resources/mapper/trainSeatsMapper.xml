@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.train.mapper.dao.trainSeatsMapper">
+  <resultMap id="BaseResultMap" type="com.example.train.entity.trainSeats">
+    <id column="seat_id" jdbcType="VARCHAR" property="seatId" />
+    <result column="train_id" jdbcType="VARCHAR" property="trainId" />
+      <result column="carriage" jdbcType="VARCHAR" property="carrige" />
+    <result column="seat_type" jdbcType="VARCHAR" property="seatType" />
+    <result column="seat_position" jdbcType="VARCHAR" property="seatPosition" />
+  </resultMap>
+</mapper>

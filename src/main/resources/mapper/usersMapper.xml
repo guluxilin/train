@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.train.mapper.dao.usersMapper">
+  <resultMap id="BaseResultMap" type="com.example.train.entity.users">
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+      <result column="user_psw" jdbcType="VARCHAR" property="userPsw" />
+    <result column="user_level" jdbcType="VARCHAR" property="userLevel" />
+  </resultMap>
+</mapper>
