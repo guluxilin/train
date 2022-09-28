@@ -27,7 +27,7 @@ public class usersServiceImpl implements usersService {
             user.setUserId( UUID.randomUUID().toString().replaceAll("-",""));//UUID生成唯一ID
             user.setUserName(name);
             user.setUserPsw(pwd);
-            user.setUserPsw(level);
+            user.setUserLevel(level);
             int i = userMapper.insert(user);
             if (i > 0)
                 return new ResultVO(1000, "注册成功", user);
